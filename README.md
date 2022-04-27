@@ -1,6 +1,6 @@
 # Jobs
 
-Project Link: https://mahmoudanguootest.surge.sh/
+Project Link: http://mahmoudanguootest.surge.sh/  or https://mahmoudanguootest.surge.sh/
 
 tools : Angular - html - css - bootstrap
 
