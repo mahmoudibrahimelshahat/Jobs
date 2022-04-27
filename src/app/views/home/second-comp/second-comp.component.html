@@ -1,0 +1,130 @@
+<div class="container-fluid">
+    <div class="container">
+        <h4>Popolar Categories</h4>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Design & Creative</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Marketing</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Telemarketing</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Software & Web</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second row in second-comp in container-fluid 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Administration</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Teaching & Education</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Engineering</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cat-div text-center">
+                    <h3><a routerLink="/login">Garments / Textile</a></h3>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---end pf first container-fluid in sec comp----- -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row r1">
+            <h2>Job Listing</h2>
+            <button mat-button routerLink="/login">Browse More Jobs</button>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let job of jobs">
+                <div class="col-md-12">
+                    <div class="collo">
+                        <div class="first">
+                            <div class="imgo">
+                                <img [src]="job.img">
+                            </div>
+                            <div class="inside-first">
+                                <h4> <a routerLink="/login">{{job.title}}</a></h4>
+                                <div class="big-small">
+                                    <div class="first-big-small">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p> California, USA</p>
+                                    </div>
+                                    <div class="second-big-small">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <p> Part-time</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="small-second">
+                                <div class="inside-second">
+                                    <div class="icon">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="butn">
+                                        <button mat-button routerLink="/login">Browse More Jobs</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Date line: 31 Jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

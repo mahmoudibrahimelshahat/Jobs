@@ -1,0 +1,16 @@
+.container-fluid , a{
+    background-color: #001D38;
+    padding: 10px;
+    color: #fff;
+}
+.container-fluid a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container-fluid a:hover{
+    color: #4bdc49;
+}
+.footer-copyright a{
+    color: #4bdc49;
+}

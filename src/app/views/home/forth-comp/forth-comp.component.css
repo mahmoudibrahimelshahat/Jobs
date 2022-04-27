@@ -1,0 +1,112 @@
+.container-fluid{
+    padding-top: 99px;
+    background-color: #F5F7FA;
+    position: relative;
+}
+.overlay{
+    background-image: url('src/assets/11.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.overlay::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #0a8cffab;
+}
+.final{
+    z-index: 4;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.final h2{
+    font-size: 39px;
+}
+.container-fluid button{
+    outline: none;
+    background-color: #00D363;
+    color: #fff;
+    border: 1px solid #00D363;
+    width: 150px;
+}
+.container-fluid button:hover{
+    color: #00D363;
+    border-color: #00D363;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+}
+/* end-of-container-one of compo forth */
+.container-fluid-1{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.imgg{
+    position: relative;
+}
+.ic{
+    position: absolute;
+    top: 111px;
+    right: 94px;
+    background-color: #21D876;
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 100%;
+}
+.container-fluid-1 p{
+    margin-top: 62px;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 17px;
+}
+.container-fluid-1 span{
+    color: #8c8585;
+}
+/* ----------- */
+@media (min-width: 320px) and (max-width:359px){
+   .imgg i{
+    right: 35px;
+   }
+}
+@media (min-width: 360px) and (max-width:374px){
+ .imgg i{
+    right: 80px;
+ }
+}
+@media (min-width: 375px) and (max-width:410px){
+
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    .imgg i{
+        right: 127px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .imgg i{
+        right: 182px;
+    }
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+ .imgg i{
+     right: 38px;
+ }
+}
+@media (min-width:1200px) and (max-width: 1534px){
+
+}

@@ -1,0 +1,207 @@
+<!-- <div class="all" *ngFor="let Service of Services">
+    <img [src]="Service.img" alt="">
+</div> -->
+<div class="container-fluid">
+    <div class="container" *ngFor="let Service of Services">
+        <h1>{{Service.title}}</h1>
+    </div>
+</div>
+<!-- ------ -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" *ngFor="let Service of Services">
+                <div class="row r0">
+                    <div class="collo">
+                        <div class="first">
+                            <div class="imgo">
+                                <img [src]="Service.img">
+                            </div>
+                            <div class="inside-first">
+                                <h4> <a>{{Service.title}}</a></h4>
+                                <div class="big-small">
+                                    <div class="first-big-small">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p> California, USA</p>
+                                    </div>
+                                    <div class="second-big-small">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <p> Part-time</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r00">
+                    <h5>Job Description</h5>
+                    <p>{{Service.description}}</p>
+                    <p>{{Service.description2}}</p>
+                    <div class="res">
+                        <h5>Responsibility</h5>
+                        <ul>
+                            <li>The applicants should have experience in the following areas.</li>
+                            <li>Have sound knowledge of commercial activities.</li>
+                            <li>Leadership, analytical, and problem-solving abilities.</li>
+                            <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
+                        </ul>
+                    </div>
+                    <div class="res">
+                        <h5>Qualifications</h5>
+                        <ul>
+                            <li>The applicants should have experience in the following areas.</li>
+                            <li>Have sound knowledge of commercial activities.</li>
+                            <li>Leadership, analytical, and problem-solving abilities.</li>
+                            <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
+                        </ul>
+                    </div>
+                    <div class="res">
+                        <h5>Benefits</h5>
+                        <p>{{Service.description}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="full-div">
+                    <h4>Job Summery</h4>
+                    <hr>
+                    <div class="div">
+                        <ul>
+                            <li>
+                                <span class="s1">Published on: </span>
+                                <span class="s2"> 12 Nov, 2019</span>
+                            </li>
+                            <li>
+                                <span class="s1">Vacancy: </span>
+                                <span class="s2"> 2 Position</span>
+                            </li>
+                            <li>
+                                <span class="s1">Salary: </span>
+                                <span class="s2"> 50k - 120k/y</span>
+                            </li>
+                            <li>
+                                <span class="s1">Location </span>
+                                <span class="s2"> California, USA</span>
+                            </li>
+                            <li>
+                                <span class="s1">Job Nature: </span>
+                                <span class="s2"> Full-time</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------ -->
+<!-- <div class="container-fluid-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 cc">
+                <h4>Apply for the job</h4>
+                <form #registerationForm="ngForm" (submit)="onSubmit(registerationForm)">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group" [class.error-form]="name.invalid && name.touched">
+                                <input type="text" id="name" placeholder="Please leave your name" class="form-control"
+                                    name="username" ngModel #name="ngModel" required minlength="3">
+                                <div *ngIf="name.errors && name.invalid && name.touched" class="text-danger">
+                                    <small *ngIf="name.errors.required">Your name is required</small>
+                                    <small *ngIf="name.errors.minlength">Mimun length is 3 characters</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" [class.error-form]="email.invalid && email.touched">
+                                    <input type="email" id="email" placeholder="Please leave your email"
+                                        class="form-control" name="email" ngModel #email="ngModel" required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                    <div *ngIf="email.errors && email.invalid && email.touched" class="text-danger">
+                                        <small *ngIf="email.errors.required">Your email is required</small>
+                                        <small *ngIf="email.errors.pattern">Please write a valid email</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="file" id="myFile" name="filename">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="container-fluid-2">
+    <div class="container">
+        <form #registerationForm="ngForm" (submit)="onSubmit(registerationForm)">
+            <div class="row">
+                <div class="col-md-8 cc">
+                    <h4>Leave Your Cv</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group" [class.error-form]="name.invalid && name.touched">
+                                <label for="name">Your name *</label>
+                                <input type="text" id="name" placeholder="Please leave your name" class="form-control"
+                                    name="username" ngModel #name="ngModel" required minlength="3">
+                                <div *ngIf="name.errors && name.invalid && name.touched" class="text-danger">
+                                    <small *ngIf="name.errors.required">Your name is required</small>
+                                    <small *ngIf="name.errors.minlength">Mimun length is 3 characters</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group" [class.error-form]="email.invalid && email.touched">
+                                <label for="email">Your email *</label>
+                                <input type="email" id="email" placeholder="Please leave your email"
+                                    class="form-control" name="email" ngModel #email="ngModel" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                <div *ngIf="email.errors && email.invalid && email.touched" class="text-danger">
+                                    <small *ngIf="email.errors.required">Your email is required</small>
+                                    <small *ngIf="email.errors.pattern">Please write a valid email</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group position-relative" [class.error-form]="cv.invalid && cv.touched">
+                                <input type="file" id="cv" name="cv" ngModel #cv="ngModel" required>
+                                <div *ngIf="cv.errors && cv.invalid && cv.touched" class="text-danger">
+                                    <small *ngIf="cv.errors.required">Your Cv is required</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group" [class.error-form]="telee.invalid && telee.touched">
+                                <label for="telee">Your Phone Number *</label>
+                                <input type="tel" id="telee" placeholder="Please Write your Number Phone"
+                                    class="form-control" name="tele" ngModel #telee="ngModel" required
+                                    pattern="^01[0-2]\d{1,8}$">
+                                <div *ngIf="telee.errors && telee.invalid && telee.touched" class="text-danger">
+                                    <small *ngIf="telee.errors.required">Your Number Phone is required</small>
+                                    <small *ngIf="telee.errors.pattern">Must Write A Correct Number Phone</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" [class.error-form]="textar.invalid && textar.touched">
+                        <label for="textar"> Message *</label>
+                        <textarea ngModel placeholder="Write Your Message" name="textar" ngModel #textar="ngModel"
+                            cols="40" required rows="10" id="textar" class="form-control"></textarea>
+                        <div *ngIf="textar.errors && textar.invalid && textar.touched" class="text-danger">
+                            <small *ngIf="textar.errors.required">Your Message is required If You Want To Send
+                                Message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="hj" mat-flat-button color="primary" [disabled]="registerationForm.invalid">SUBMIT
+                            NOW</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

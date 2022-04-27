@@ -1,0 +1,108 @@
+<div class="container-fluid">
+    <div class="container">
+        <h1>4536+ Jobs Available</h1>
+    </div>
+</div>
+<!-- ----------- -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="small-coll">
+                    <input type="text" name="username" placeholder="Search keyword">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Location</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Egypt</mat-option>
+                            <mat-option value="option1">Alexandria</mat-option>
+                            <mat-option value="option2">Obour</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Category</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Category</mat-option>
+                            <mat-option value="option1">Category2</mat-option>
+                            <mat-option value="option2">Category3</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Job type</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Job type</mat-option>
+                            <mat-option value="option1">full time</mat-option>
+                            <mat-option value="option2">part time</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Qualification</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Qualification</mat-option>
+                            <mat-option value="option1">Qualification1</mat-option>
+                            <mat-option value="option2">Qualification2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Gender</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Gender</mat-option>
+                            <mat-option value="option1">Male</mat-option>
+                            <mat-option value="option2">Female</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <button mat-button class="han">Reset</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row r1">
+                    <h4>Job Listing</h4>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Most Recent</mat-label>
+                        <mat-select>
+                            <mat-option value="option">Designer</mat-option>
+                            <mat-option value="option1">Marketer</mat-option>
+                            <mat-option value="option2">Wordpress</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <ng-container *ngFor="let job of jobs">
+                            <div class="collo">
+                                <div class="first">
+                                    <div class="imgo">
+                                        <img [src]="job.img">
+                                    </div>
+                                    <div class="inside-first">
+                                        <h4> <a routerLink="/jobdetails/{{job.id}}">{{job.title}}</a></h4>
+                                        <div class="big-small">
+                                            <div class="first-big-small">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                <p> California, USA</p>
+                                            </div>
+                                            <div class="second-big-small">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <p> Part-time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="small-second">
+                                        <div class="inside-second">
+                                            <div class="icon">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="butn">
+                                                <button mat-button routerLink="/jobdetails/{{job.id}}">Browse More Jobs</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Date line: 31 Jan 2020</p>
+                                </div>
+                            </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

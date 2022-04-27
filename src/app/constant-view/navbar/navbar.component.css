@@ -1,0 +1,58 @@
+.container-fluid{
+    position: fixed;
+    z-index: 9999999999;
+    /* background-color: #1589F1; */
+    background-color: #0683F1;
+
+}
+.container-fluid.fixed-navbar {
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 29, 56, 0.8);    
+    transition: 0.5s;
+}
+.bg-light{
+    background-color: transparent !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #abd070;
+}
+/* error */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link :hover{
+    color: #00D363;
+}
+li a.active{
+    color: 00D363;
+}
+/* error */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #00D363;
+}
+.nav-item a{
+    color: #fff;
+}
+.nav-item a:hover{
+    color: #00D363;
+}
+.nav-item{
+    padding: 0 13px 0 13px;
+    text-transform: capitalize;
+}
+.navbar-light .navbar-toggler-icon {
+    color: #00D363;
+}
+.navbar-light .navbar-toggler {
+    color: #abd070;
+    background-color:#00D363;
+}
+button:focus {
+    outline: none;
+    color: #abd070;
+}
+/* .navbar-inverse{
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 29, 56, 0.8);
+} */

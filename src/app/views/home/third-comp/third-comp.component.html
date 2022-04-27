@@ -1,0 +1,81 @@
+<div class="container-fluid text-center">
+    <div class="container">
+        <h2>Featured Candidates</h2>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let item of items">
+                <div class="all">
+                    <div class="call">
+                        <img [src]="item.img">
+                    </div>
+                    <div class="comm">
+                        <h5>Markary Jondon</h5>
+                        <p>
+                            Software Engineer
+                        </p>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+<!-- end of first container-fluid of third comp -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row r1">
+            <div class="top">
+                <h2>Top Companies</h2>
+                <button mat-button routerLink="/login">Browse More Jobs</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="full">
+                    <div class="imgo">
+                        <img src="assets/1.svg">
+                    </div>
+                    <h5><a routerLink="/login">Snack Studio</a></h5>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="full">
+                    <div class="imgo">
+                        <img src="assets/2.svg">
+                    </div>
+                    <h5><a routerLink="/login">Snack Studio</a></h5>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="full">
+                    <div class="imgo">
+                        <img src="assets/3.svg">
+                    </div>
+                    <h5><a routerLink="/login">Snack Studio</a></h5>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="full">
+                    <div class="imgo">
+                        <img src="assets/4.svg">
+                    </div>
+                    <h5><a routerLink="/login">Snack Studio</a></h5>
+                    <div class="smallcat">
+                        <span>50</span>
+                        <p> Available position</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

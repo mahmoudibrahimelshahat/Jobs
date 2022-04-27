@@ -1,0 +1,9 @@
+.icon-eye {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+}
+.container-fluid{
+    padding: 150px 0 50px 0;
+}

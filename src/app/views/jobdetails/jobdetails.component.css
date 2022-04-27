@@ -1,0 +1,147 @@
+.container-fluid{
+    background-image: url('src/assets/k.png');
+    padding-top: 190px;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-bottom: 130px;
+    color: #fff;
+}
+/* ------- */
+.container-fluid-1{
+    background: #F5F7FA;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.r0{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.r00{
+    background-color: #fff;
+    padding: 23px;
+}
+.collo{
+    margin-top: 35px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 4px;
+    display: flex;
+}
+.first{
+    display: flex;
+}
+.first a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.first a:hover{
+    color: #00D363;
+}
+.inside-first{
+    padding-top: 20px;
+}
+.big-small{
+    color: #948585;
+    display: flex;
+}
+.first-big-small{
+    display: flex;
+    margin-right: 10px;
+}
+.second-big-small{
+    display: flex;
+}
+.imgo{
+    padding: 23px 10px;
+    background-color: #F5F7FA;
+    border-radius: 24px;
+     padding: 23px 10px;
+     margin-right: 12px;
+}
+.big-small i{
+    padding: 4px;
+}
+.container-fluid-1 p{
+    color: #565252;
+    font-weight: 100;
+    line-height: 1.8;
+}
+.res{
+    margin: 15px 0 15px 0;
+}
+li{
+    color: #757272;
+}
+ul{
+    line-height: 1.8;
+}
+.full-div{
+    background-color: #fff;
+    padding: 15px;
+}
+.s1{
+    color: #757272;
+    margin-right: 5px;
+}
+.s2{
+    color: black;
+}
+.r000{
+    background-color: #fff;
+}
+/* ---------- */
+.container-fluid-2{
+    background: #F5F7FA;
+    padding-bottom: 50px;
+}
+.cc{
+    background-color: #fff;
+}
+textarea{
+    max-height: 346px;
+    min-height: 300px;
+    width: 100%;
+}
+.error-form input,
+.error-form select,
+.error-form textarea {
+    border: 1px solid #F00;
+}
+
+.container-fluid-2 h4 {
+    margin-top: 20px;
+}
+/* -------- */
+@media (min-width: 320px) and (max-width:359px){
+    .container-fluid{
+             background-position: center top; 
+    }
+}
+@media (min-width: 360px) and (max-width:374px){
+    .container-fluid{
+        background-position: center top; 
+}
+}
+@media (min-width: 375px) and (max-width:410px){
+    .container-fluid{
+        background-position: center top; 
+}
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    .container-fluid{
+        background-position: center top; 
+}
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .container-fluid{
+        background-position: center top; 
+}
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .container-fluid{
+        background-position: center top; 
+}
+} 

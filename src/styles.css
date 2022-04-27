@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: rgb(255 255 255);
+    border: 1px solid #ccc;
+}
+ .owl-theme{
+    position: relative;
+} 
+ .owl-next{
+    position: absolute;
+    top: 105px;
+    right: -30px;
+}
+.owl-prev{
+    position: absolute;
+    left: -30px;
+    top: 105px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    font-size: 14px;
+    border: 1px solid #aac3e23d;
+    padding: 10px 17px;
+    border-radius: 100%;
+    background-color: #aac3e23d;
+    color: #97a4b5;
+    transition: 0.8s;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+   background-color: #aac3e2;
+   color: #fff;
+} 
